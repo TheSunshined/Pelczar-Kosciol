@@ -1,0 +1,289 @@
+/**
+$graymode:#363636;
+$yellymode:#00ffa2;
+$backgroundtextbox:#f7f7f7;
+**/
+
+/*Dodatkowe fonty*/
+/*Kolorki */
+.BlackButton, .Date, footer, .BlackButton2, #MobBoxHolder, #MobBoxCont, #NavBoxCont, .MobNavButton
+{background-color: #363636;} /* Darkero */
+
+.HeadArt, .ArticleText {color: #363636;}
+
+.Date, footer, .BlackButton2, .NavButton, .MobNavButton, #Logo, .BlackButton{color:#f7f7f7;} /* Biały*/
+
+	#ArticleTextKontakt, .BlackBoxText2 {background-color:#f7f7f7;border: 3px solid #363636;}
+
+	body {background-color:#f7f7f7;}
+
+@font-face {
+    font-family:"FontDarkSemi";
+    src:url(fonty/palanquindark-semibold.ttf) format("truetype");
+}
+@font-face {
+    font-family:"FontSemi";
+    src:url(fonty/palanquin-semibold.ttf) format("truetype");
+}
+@font-face {
+    font-family:"FontLight";
+    src:url(fonty/Merriweather-Regular.ttf) format("truetype");
+}
+@font-face {
+    font-family:"FontDark";
+    src:url(fonty/palanquindark-regular.ttf) format("truetype");
+}
+@font-face {
+    font-family:"FontMed";
+    src:url(fonty/palanquin-medium.ttf) format("truetype");
+}
+
+@font-face {
+    font-family:"FontBoldo";
+    src:url(fonty/Merriweather-Black.ttf) format("truetype");
+}
+
+
+/* Gird*/
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+#logos {display: flex;height: 250px;filter: contrast(110%) saturate(110%); margin: 0px;padding: 0px;background-repeat:round;}
+
+/*Menu*/
+
+
+.LinkMenu {text-decoration: none;}
+
+.TextMen {display: inline;display: -webkit-inline-box;margin-bottom:14px;vertical-align:bottom;
+	
+}
+
+/* Menu ikony */
+.ico {width: 30px;height: 30px;
+	margin-right: 10px;
+  display: -webkit-inline-box;
+	cursor: pointer;
+ }
+
+svg {fill: currentColor;}
+
+.aktual{background: url(svg/aktual.svg);background-size:cover;}
+
+.aktualActive {cursor: pointer;background: url(svg/aktualactive.svg);background-size:cover;display: none;}
+
+.info {background: url(svg/ogloszenia.svg);background-size:cover;}
+
+.infoActive {cursor: pointer;background: url(svg/ogloszeniaactive.svg);background-size:cover;display: none;}
+
+.foto {background: url(svg/foto.svg);background-size:cover;}
+
+.fotoActive {cursor: pointer;background: url(svg/fotoactive.svg);background-size:cover;display: none;}
+
+.opis{background: url(svg/opis.svg);background-size:cover;}
+
+.opisActive{cursor: pointer;background: url(svg/opisactive.svg);background-size:cover;display: none;}
+
+.kontakt{background: url(svg/kontakt.svg);background-size:cover;}
+
+.kontaktActive{cursor: pointer;background: url(svg/kontaktactive.svg);background-size:cover;display: none;}
+
+/* Menu ikony END */
+
+.NavButton {padding: 5px;display: inline-block;font-family:FontDarkSemi;line-height: 5px;
+	margin: 0px 10px 0px 10px;border-bottom:4px solid #363636;}
+#NavBoxCont {margin: 0px 0px 25px 0px;padding: 0px;border-top:4px solid #363636;}
+
+.MobNavButton {width: 100%;text-align: center;font-family:FontDarkSemi;display: inline-block;float: left;}
+
+#MobBoxCont {padding: 0px;display: inline-block;margin: 0px;width: 100%;}
+
+#MobBoxHolder {width: 100%;display: inline-block;}
+#Logo {font-family:FontDarkSemi;padding-left: 0.5rem;display: inline-block;}
+
+/*end*/
+/* SWITCH W MENU MOB*/
+.switch {
+  position: relative;
+  display: inline-block;
+	margin: 0.6rem 0.6rem 0rem 0rem;
+  width: 4.5rem;
+  height: 4.5rem;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(svg/MenuArrow.svg);
+	background-size:cover;
+	animation:rekt 1s alternate ease-out forwards;
+	animation-fill-mode: forwards; 
+  
+}
+
+
+input:checked + .slider {
+  background: url(svg/MenuArrow2.svg);
+	background-size:cover;
+    animation:spin 1s alternate ease-out forwards;
+	animation-fill-mode: forwards;  
+}
+
+@keyframes spin { 100% {transform:rotate(180deg); } }
+
+p {margin: 0px;padding: 0px;}
+
+
+/*Prawy Panel*/
+.BlackButton2 {width: 100%;font-family: FontDark;text-align: center;}
+.BlackButtonContener2 {margin-bottom: 5px;width: 100%;}
+.BlackBox2 {padding: 0px 25px 0px 25px;}
+.BlackBoxText2 {padding: 0px 15px 0px 15px;font-family: FontMed;}
+
+
+/*stopka*/
+
+	footer {display: grid;width: 100%;margin-top: 20px;}
+	
+	#Copy {text-align: center;display: inline-block;font-family:FontMed;font-size: 0.8rem;margin: auto;}
+
+    #kkk {float: left;padding-left: 35px;font-family:FontSemi;}
+    #sss {float: left;padding:0px 75px;}
+
+/* HOVER MODE */
+
+/*Prawy Panel*/
+.BlackButton {width: 100%;text-align: center;}
+.BlackButtonContener {display: inline-block;margin-bottom: 5px;}
+.BlackBox {padding: 0px 25px 0px 25px;}
+.BlackBoxText {padding: 0px 15px 0px 15px;}
+
+/*Lewy Panel */
+#content b, strong {font-family: FontBoldo;}
+.ActiveArt {height: auto}
+.ArtContener {display: inline-block;float: left;margin-bottom: 10px;}
+.HeadArt{ padding: 0px 0px 0px 55px;overflow: hidden;}
+.Date {margin: 10px; font-family: FontLight;
+position: static;float:right;padding: 5px 10px;}
+
+.ArticleBoxText {font-family: FontLight;overflow: hidden;}
+.ArtTextCenter {padding: 0px 15px 0px 65px;}
+.ArticleText {font-family: FontMed;
+    text-align: left;
+}
+
+.BlackButton, .HeadArt, .BlackBox2 {font-size: 1.65rem;font-family: FontDarkSemi;} /*Nagłówki*/
+
+footer {font-size: 1.2rem;} /*Prawa stopka */
+
+.ArticleText, #infooo {font-size: 1rem;} /*Text article */
+
+#Logo {font-size: 3rem;} /*Logo mobile */
+
+#MobBoxCont, .MobNavButton, .NavButton {font-size: 1.5rem;} /* font menu */
+
+.pokawiecej {text-decoration: none;
+    border: 0px;background-color:#f7f7f7;
+    font-size: 1.5rem;
+    margin: auto;
+}
+.ButtonConter {padding: 0px 35px 0px 35px;}
+
+.ButtonPoka {font-family:FontDark;width: 100%;margin-bottom: 20px;
+    display: flex;}
+#znik {display: none;cursor: pointer;}
+#pokazz {cursor: pointer;}
+
+.ButtonPoka input {color: #363636; font-family:FontDark;
+    padding: 0px 40px;}
+
+
+#NewsConter .ArtContener {border-bottom:4px solid #363636;}
+/*break centering lewy i prawy*/
+@media only screen and (min-width: 1330px) and (max-width: 1600px) {
+#NewsConter {padding-left:35px}
+#PrawyCont {padding-right:35px}
+}
+
+@media only screen and (min-width: 1600px) and (max-width: 1920px) {
+#NewsConter {padding-left:125px}
+#PrawyCont {padding-right:125px}
+}
+
+@media only screen and (min-width: 1920px) {
+#NewsConter {padding-left:200px}
+#PrawyCont {padding-right:200px}
+}
+/*Break*/
+
+@media only screen and (max-width: 900px), screen and (max-aspect-ratio: 8/6) {
+	#NavBoxCont {display:none;}
+	Header {display: none;}
+	[class*="col-"] {width: 100%;}
+	p img {max-width: 100%;height:auto;}
+	#NavBoxCont {display:none;}
+	.BlackBox2 {padding: 0px 10px 0px 10px;}
+	.ArticleText {}
+	.HeadArt {padding: 0px 15px 0px 10px;}
+	.BlackBox {padding: 0px 10px;}
+	.ArtTextCenter{padding: 0px 15px;}
+    #kkk {padding: 0px;float: none;}
+    #NewsConter {padding: 0px 15px;}
+    #PrawyCont {padding:0px}
+    #1sss {display: flex;}
+    #sss {margin: auto;padding: 0px;}
+}
+
+/*Break*/
+
+@media only screen and (min-width: 900px) and (min-aspect-ratio: 8/6) {
+	#MobHide {display:none;}
+    p img {max-width: 100%;height:auto;}
+}
+/*rekt*/
+@media screen and (-webkit-min-device-pixel-ratio: 1.0) and (-webkit-max-device-pixel-ratio: 1.5) {	
+	.switch {
+	margin: 0.25rem 0.5rem 0rem 0rem;
+  	width: 3.5rem;
+  	height: 3.5rem;}
+}
+@media screen and (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-max-device-pixel-ratio: 2.5) {
+    /* CSS for best-density screens */
+	.ArticleText {font-size: 1rem;}
+	.HeadArt, .BlackBox, .BlackBox2, .BlackButton, footer {font-size: 1.5rem;}
+	#Logo {font-size: 1.75rem;}
+	#Copy {font-size: 0.75rem;}
+	.MobNavButton {font-size: 1.30rem;}
+	.switch {
+	margin: 0.25rem 0.5rem 0rem 0rem;
+  	width: 2.9rem;
+	height: 2.9rem;}
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2.5) and (-webkit-max-device-pixel-ratio: 5) {
+    /* CSS for best-density screens */
+	.ArticleText {font-size: 0.90rem;}
+	.HeadArt, .BlackBox, .BlackBox2, .BlackButton, footer {font-size: 1.35rem;}
+	#Logo {font-size: 1.5rem;}
+	#Copy {font-size: 0.70rem;}
+	.MobNavButton {font-size: 1.10rem;}
+	.switch {
+	margin: 0.25rem 0.5rem 0rem 0rem;
+  	width: 2.5rem;
+	height: 2.5rem;}
+}

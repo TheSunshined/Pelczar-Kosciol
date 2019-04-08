@@ -1,0 +1,81 @@
+<nav style="margin-bottom: 20px;">
+	<script>
+	$(document).ready(function(){
+		$(".MobMenuClick").click(function(){
+			$("#MobBoxCont").toggle();
+		});
+	});
+// Preloadmenu
+        $(function () {
+            $('ul a').on('click', function (e) {
+                e.preventDefault();
+                var page = $(this).attr('href');
+                $('#content').load(page,function(){}).hide().fadeIn(1000);
+				
+            });
+        });
+		
+	</script>
+	<link rel="stylesheet" href="../css/sunshinestyle.css">
+<header>
+	
+<center>
+	<img id="logos"
+	src="pelcz.png">
+</center>
+</header>
+<div id="MobHide">
+		<div id="MobBoxHolder"><div id="Logo">Parafia św. Pelczara</div>
+		<label class="switch" style="float: right;">
+		  <input class="MobMenuClick" type="checkbox">
+		  <span class="slider"></span>
+		</label>
+	</div>
+  <ul id="MobBoxCont" style="display: none;">
+		<a href="body/aktualnosci.php"><div class="MobNavButton" id="aktualnosci" >AKTUALNOŚCI</div></a>
+		<a href="body/ogloszenia.php"><li class="MobNavButton" id="ogloszenia">OGŁOSZENIA</li></a>
+		<a href="body/zdjecia.php"><li class="MobNavButton" id="zdjecia">ZDJĘCIA</li></a>
+		<a href="body/opis.php"><li class="MobNavButton" id="opis">OPIS</li></a>
+		<a href="body/kontakt.php"><li class="MobNavButton" id="kontakt">KONTAKT</li></a>
+	</ul>
+</div>
+	<ul id="NavBoxCont">
+		<center>
+		<a href="body/aktualnosci.php" class="LinkMenu">
+			<li class="NavButton" id="aktualnosci">	
+				<div class="ico aktual" id="aktual"></div>
+				<div class="ico aktualActive" id="aktualActive"></div>
+				<div class="TextMen">AKTUALNOŚCI</div>
+			</li>
+		</a>
+		<a href="body/ogloszenia.php" class="LinkMenu">
+			<li class="NavButton" id="ogloszenia">
+				<div class="ico info" id="info"></div>
+				<div class="ico infoActive" id="infoActive"></div>
+				<div class="TextMen">OGŁOSZENIA</div>
+			</li>
+		</a>
+		<a href="body/zdjecia.php" class="LinkMenu">
+			<li class="NavButton" id="zdjecia">
+				<div class="ico foto" id="foto"></div>
+				<div class="ico fotoActive" id="fotoActive"></div>
+				<div class="TextMen">ZDJĘCIA</div>
+			</li>
+		</a>
+		<a href="body/opis.php" class="LinkMenu">
+			<li class="NavButton" id="opis">
+				<div class="ico opis" id="desc"></div>
+				<div class="ico opisActive" id="opisActive"></div>
+				<div class="TextMen">OPIS</div>
+			</li>
+		</a>
+		<a href="body/kontakt.php" class="LinkMenu">
+			<li class="NavButton" id="kontakt">			
+				<div class="ico kontakt" id="conct"></div>
+				<div class="ico kontaktActive" id="kontaktActive"></div>
+				<div class="TextMen">KONTAKT</div>
+			</li>
+		</a>
+		</center>
+	</ul>
+</nav>
