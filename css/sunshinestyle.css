@@ -4,18 +4,24 @@ $yellymode:#00ffa2;
 $backgroundtextbox:#f7f7f7;
 **/
 
-/*Dodatkowe fonty*/
+:root {
+    --Header:#263238;
+    --Font:#f7f7f7;
+}
+
 /*Kolorki */
 .BlackButton, .Date, footer, .BlackButton2, #MobBoxHolder, #MobBoxCont, #NavBoxCont, .MobNavButton
-{background-color: #363636;} /* Darkero */
+{background-color: var(--Header);}
 
-.HeadArt, .ArticleText {color: #363636;}
+.HeadArt, .ArticleText {color:var(--Header);}
 
-.Date, footer, .BlackButton2, .NavButton, .MobNavButton, #Logo, .BlackButton{color:#f7f7f7;} /* Biały*/
+.Date, footer, .BlackButton2, .NavButton, .MobNavButton, #Logo, .BlackButton{color:var(--Font);} /* Biały*/
 
-	#ArticleTextKontakt, .BlackBoxText2 {background-color:#f7f7f7;border: 3px solid #363636;}
+	#ArticleTextKontakt, .BlackBoxText2 {background-color:var(--Font);border: 3px solid var(--Header);}
 
-	body {background-color:#f7f7f7;}
+	body {background-color:var(--Font);}
+
+/*Dodatkowe fonty*/
 
 @font-face {
     font-family:"FontDarkSemi";
@@ -101,8 +107,8 @@ svg {fill: currentColor;}
 /* Menu ikony END */
 
 .NavButton {padding: 5px;display: inline-block;font-family:FontDarkSemi;line-height: 5px;
-	margin: 0px 10px 0px 10px;border-bottom:4px solid #363636;}
-#NavBoxCont {margin: 0px 0px 25px 0px;padding: 0px;border-top:4px solid #363636;}
+	margin: 0px 10px 0px 10px;border-bottom:4px solid var(--Header);}
+#NavBoxCont {margin: 0px 0px 25px 0px;padding: 0px;border-top:4px solid var(--Header);}
 
 .MobNavButton {width: 100%;text-align: center;font-family:FontDarkSemi;display: inline-block;float: left;}
 
@@ -199,7 +205,7 @@ footer {font-size: 1.2rem;} /*Prawa stopka */
 #MobBoxCont, .MobNavButton, .NavButton {font-size: 1.5rem;} /* font menu */
 
 .pokawiecej {text-decoration: none;
-    border: 0px;background-color:#f7f7f7;
+    border: 0px;background-color:var(--Font);
     font-size: 1.5rem;
     margin: auto;
 }
@@ -210,11 +216,11 @@ footer {font-size: 1.2rem;} /*Prawa stopka */
 #znik {display: none;cursor: pointer;}
 #pokazz {cursor: pointer;}
 
-.ButtonPoka input {color: #363636; font-family:FontDark;
+.ButtonPoka input {color: var(--Header); font-family:FontDark;
     padding: 0px 40px;}
 
 
-#NewsConter .ArtContener {border-bottom:4px solid #363636;}
+#NewsConter .ArtContener {border-bottom:4px solid var(--Header);}
 /*break centering lewy i prawy*/
 @media only screen and (min-width: 1330px) and (max-width: 1600px) {
 #NewsConter {padding-left:35px}
