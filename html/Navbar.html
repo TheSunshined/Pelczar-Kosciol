@@ -16,20 +16,46 @@
         });
 		
 	</script>
+    <script>
+    function kolormen (){
+        
+        if (Logo.style.color == "var(--Wazne)")
+        
+        
+        {Logo.style.color = "var(--Font)"}
+        
+        else
+            
+        {Logo.style.color = "var(--Wazne)";}
+
+        if (Logo2.style.color == "var(--Wazne)")
+        
+        
+        {Logo2.style.color = "var(--Font)"}
+        
+        else
+            
+        {Logo2.style.color = "var(--Wazne)";}
+        
+    }
+        //Logo.innerHTML = '<div style="color:var(--Wazne);">MENU</div>';
+    </script>
 	<link rel="stylesheet" href="../css/sunshinestyle.css">
 <header>
 	
 <center>
-	<img id="logos"
-	src="pelcz.png">
+    <img id="logos" src="pelcz.png">
+	<img id="logos2" src="pelcz.png">
 </center>
 </header>
 <div id="MobHide">
-		<div id="MobBoxHolder"><div id="Logo">Parafia św. Pelczara</div>
-		<label class="switch" style="float: right;">
+    <div id="MobBoxHolder">
+        <label class="switch" style="float: right;">
 		  <input class="MobMenuClick" type="checkbox">
-		  <span class="slider"></span>
+		  <span onclick="kolormen();" id="slider" class="slider"></span>
 		</label>
+        <div style="float: right;margin: 0px 20px;" id="Logo" class="Logoso">MENU</div>
+        <div style="float: right;margin: 0px 20px;" id="Logo2" class="Logoso">Strzyżów, Parafia św. bpa J. S. Pelczara</div>
 	</div>
   <ul id="MobBoxCont" style="display: none;">
 		<a href="body/aktualnosci.php"><div class="MobNavButton" id="aktualnosci" >AKTUALNOŚCI</div></a>

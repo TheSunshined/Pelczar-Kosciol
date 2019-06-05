@@ -7,9 +7,6 @@
 <meta name="author" content="Łukasz Kiebała / TheSunshine">
 <meta name="description" content="Parafia pw. św. Józefa Sebastiana Pelczara w Strzyżowie. Zawale Jana Pawła 2">
 <meta name="keywords" content="strzyżów, parafia Strzyżów, Strzyżów pelczara, parafia pelczara, parafia Strzyżów pelczara, mały kościół, mała parafia, mały kościół Strzyżów, mała parafia Strzyżów, kościół pelczara,  kościół pelczara Strzyżów, kościół Strzyżów pelczara, Julian Jarząb, Julian Jarząb Strzyżów pelczara, Julian Jarząb pelczara, strzyzow, Strzyżów, zawale, ulica Jana Pawła II, Jana Pawła 2">
-
-
-
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -20,7 +17,6 @@
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="viewport" content="width=device-width, target-densityDpi=device-dpi">
 
 <!--  Google Analytics -->
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -60,8 +56,13 @@ $(document).ready(function(){
     });
 });
 </script>
+<script>
+    function nocny () {
+        root.style.setProperty('--Wazne2', '#9a9a9a');
+    }
+    </script>
 </head>
-<body style="margin: 0px;">
+<body style="margin: auto;">
 <div id="Navbar"></div> <!-- Navbar -->
 <div id="fixedfoot">
     <div class="col-8" id="content" style="display: block;float:left;"></div> <!-- Tresc -->

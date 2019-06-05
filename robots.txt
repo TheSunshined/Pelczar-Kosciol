@@ -1,9 +1,10 @@
 User-agent: *
 
-
-Disallow: /body
+Disallow: /admin
 Disallow: /css
+Disallow: /body
 Disallow: /html
-
+Disallow: /admin.php
+Disallow: /POLETESTOWE
 
 Allow: /index.php

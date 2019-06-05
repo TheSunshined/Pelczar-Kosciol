@@ -1,40 +1,50 @@
 /**
 $graymode:#363636;
+$havenblue?:#00e5ff;
+$2havenblue?:#42a5f5;
 $yellymode:#00ffa2;
 $backgroundtextbox:#f7f7f7;
 **/
 
 :root {
-    --Header:#263238;
+    --Back:#f5f5f5;
+    --Header:#373737;
     --Font:#f7f7f7;
+    --Wazne:#42a5f5;
+    --Wazne2:#544e4e;
+    --Wazne3:#344450;
+    --Wazne4:#ddd;
+    --Wazne5:#fff;
 }
 
+ul {margin: 0px;}
+
 /*Kolorki */
+
+
+a {color:var(--Wazne)}
+
 .BlackButton, .Date, footer, .BlackButton2, #MobBoxHolder, #MobBoxCont, #NavBoxCont, .MobNavButton
 {background-color: var(--Header);}
 
 .HeadArt, .ArticleText {color:var(--Header);}
 
-.Date, footer, .BlackButton2, .NavButton, .MobNavButton, #Logo, .BlackButton{color:var(--Font);} /* Biały*/
+.Date, footer, .BlackButton2, .NavButton, .MobNavButton, #Logo, #Logo2, .BlackButton{color:var(--Font);} /* Biały*/
 
 	#ArticleTextKontakt, .BlackBoxText2 {background-color:var(--Font);border: 3px solid var(--Header);}
 
-	body {background-color:var(--Font);}
+	body {background-color:var(--Back);max-width: 1920px;margin: auto;}
 
+#fixedfoot {max-width: 1550px;margin: auto;}
+#Navbar {max-width: 1550px;margin: auto;}
+/* #Footer {max-width: 1550px;margin: auto;} */
 /*Dodatkowe fonty*/
 
 @font-face {
     font-family:"FontDarkSemi";
     src:url(fonty/palanquindark-semibold.ttf) format("truetype");
 }
-@font-face {
-    font-family:"FontSemi";
-    src:url(fonty/palanquin-semibold.ttf) format("truetype");
-}
-@font-face {
-    font-family:"FontLight";
-    src:url(fonty/Merriweather-Regular.ttf) format("truetype");
-}
+
 @font-face {
     font-family:"FontDark";
     src:url(fonty/palanquindark-regular.ttf) format("truetype");
@@ -44,10 +54,6 @@ $backgroundtextbox:#f7f7f7;
     src:url(fonty/palanquin-medium.ttf) format("truetype");
 }
 
-@font-face {
-    font-family:"FontBoldo";
-    src:url(fonty/Merriweather-Black.ttf) format("truetype");
-}
 
 
 /* Gird*/
@@ -68,8 +74,9 @@ $backgroundtextbox:#f7f7f7;
 
 /*Menu*/
 
+.LinkMenu {text-decoration: none;margin: 0px 1px;display: inline-block;}
 
-.LinkMenu {text-decoration: none;}
+.LinkMenu:hover {background: var(--Wazne2);border-radius:25px;}
 
 .TextMen {display: inline;display: -webkit-inline-box;margin-bottom:14px;vertical-align:bottom;
 	
@@ -106,17 +113,18 @@ svg {fill: currentColor;}
 
 /* Menu ikony END */
 
-.NavButton {padding: 5px;display: inline-block;font-family:FontDarkSemi;line-height: 5px;
-	margin: 0px 10px 0px 10px;border-bottom:4px solid var(--Header);}
-#NavBoxCont {margin: 0px 0px 25px 0px;padding: 0px;border-top:4px solid var(--Header);}
+.NavButton {padding: 5px 12px;display: inline-block;font-family:FontDarkSemi;line-height: 5px;border-bottom:4px solid var(--Header);}
+/*.NavButton:hover {border-bottom:4px solid var(--Wazne2);} */
+#NavBoxCont {margin: auto;padding: 0px;border-top:4px solid var(--Header);max-width: 1550px;}
 
 .MobNavButton {width: 100%;text-align: center;font-family:FontDarkSemi;display: inline-block;float: left;}
 
 #MobBoxCont {padding: 0px;display: inline-block;margin: 0px;width: 100%;}
 
 #MobBoxHolder {width: 100%;display: inline-block;}
-#Logo {font-family:FontDarkSemi;padding-left: 0.5rem;display: inline-block;}
+#Logo, #Logo2 {font-family:FontDarkSemi;padding-left: 0.5rem;}
 
+#logos2 {display: block;}
 /*end*/
 /* SWITCH W MENU MOB*/
 .switch {
@@ -159,7 +167,7 @@ p {margin: 0px;padding: 0px;}
 /*Prawy Panel*/
 .BlackButton2 {width: 100%;font-family: FontDark;text-align: center;}
 .BlackButtonContener2 {margin-bottom: 5px;width: 100%;}
-.BlackBox2 {padding: 0px 25px 0px 25px;}
+.BlackBox2 {padding: 0px 0px 0px 50px;}
 .BlackBoxText2 {padding: 0px 15px 0px 15px;font-family: FontMed;}
 
 
@@ -175,23 +183,28 @@ p {margin: 0px;padding: 0px;}
 /* HOVER MODE */
 
 /*Prawy Panel*/
+.BlackBoxText2 ul {overflow: auto}
 .BlackButton {width: 100%;text-align: center;}
 .BlackButtonContener {display: inline-block;margin-bottom: 5px;}
 .BlackBox {padding: 0px 25px 0px 25px;}
 .BlackBoxText {padding: 0px 15px 0px 15px;}
 
 /*Lewy Panel */
-#content b, strong {font-family: FontBoldo;}
 .ActiveArt {height: auto}
-.ArtContener {display: inline-block;float: left;margin-bottom: 10px;}
-.HeadArt{ padding: 0px 0px 0px 55px;overflow: hidden;}
-.Date {margin: 10px; font-family: FontLight;
+.ArtContener {display: inline-block;float: left;margin-bottom: 25px;}
+.HeadArt{overflow: hidden;padding: 0px 0px 10px 20px;}
+.Date {margin: 10px; font-family: FontMed;
 position: static;float:right;padding: 5px 10px;}
 
-.ArticleBoxText {font-family: FontLight;overflow: hidden;}
-.ArtTextCenter {padding: 0px 15px 0px 65px;}
+.ArticleBoxText {font-family: FontMed;overflow: hidden;}
+.ArtTextCenter {padding: 0px 25px;}
 .ArticleText {font-family: FontMed;
-    text-align: left;
+    text-align: left;margin-bottom: 20px;
+}
+
+#AktualkaCont .CenterArtConter, #OgloszeniaCont .CenterArtConter {
+   /* border-bottom: 3px solid var(--Header); */
+    margin-left: 0px 25px;
 }
 
 .BlackButton, .HeadArt, .BlackBox2 {font-size: 1.65rem;font-family: FontDarkSemi;} /*Nagłówki*/
@@ -200,7 +213,7 @@ footer {font-size: 1.2rem;} /*Prawa stopka */
 
 .ArticleText, #infooo {font-size: 1rem;} /*Text article */
 
-#Logo {font-size: 3rem;} /*Logo mobile */
+#Logo, #Logo2 {font-size: 3rem;} /*Logo mobile */
 
 #MobBoxCont, .MobNavButton, .NavButton {font-size: 1.5rem;} /* font menu */
 
@@ -219,9 +232,47 @@ footer {font-size: 1.2rem;} /*Prawa stopka */
 .ButtonPoka input {color: var(--Header); font-family:FontDark;
     padding: 0px 40px;}
 
+#OpisCont .CenterArtConter, #AktualkaCont .CenterArtConter, #OgloszeniaCont .CenterArtConter {background: var(--Wazne5);}
+.BlackBoxText2 {background: var(--Wazne5);}
+.HeadArt {background: var(--Wazne5);}
+#ArticleTextKontakt {background: var(--Wazne5);}
+.pokawiecej {background: var(--Wazne5);}
+#NewsConter {margin: 0px 0px 0px 25px;}
+#PrawyCont  .BlackBox2 {margin: 0px 25px 0px 0px;}
 
-#NewsConter .ArtContener {border-bottom:4px solid var(--Header);}
+.Logoso:nth-child(3) {display: none;}
+
+@media only screen and (min-width: 900px) {
+    .Logoso:nth-child(3) {display: block;}
+    .Logoso:nth-child(2) {display: none;}
+    #logos2 {display: none;}
+}
+
+
+@media only screen and (min-width: 900px) and (-webkit-min-device-pixel-ratio: 0.1) and (-webkit-max-device-pixel-ratio: 1.5) {
+    .Logoso:nth-child(3) {display: block;}
+    .Logoso:nth-child(2) {display: none;}
+    #logos2 {display: none;}
+    
+}
+
+@media only screen and (min-width: 750px) and (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-max-device-pixel-ratio: 2.5) {
+    .Logoso:nth-child(3) {display: block;}
+    .Logoso:nth-child(2) {display: none;}
+    #logos2 {display: none;}
+    
+}
+
+@media only screen and (min-width: 550px) and (-webkit-min-device-pixel-ratio: 2.5) and (-webkit-max-device-pixel-ratio: 5.0) {
+    .Logoso:nth-child(3) {display: block;}
+    .Logoso:nth-child(2) {display: none;}
+    #logos2 {display: none;}
+    
+}
+
+
 /*break centering lewy i prawy*/
+/*
 @media only screen and (min-width: 1330px) and (max-width: 1600px) {
 #NewsConter {padding-left:35px}
 #PrawyCont {padding-right:35px}
@@ -236,24 +287,48 @@ footer {font-size: 1.2rem;} /*Prawa stopka */
 #NewsConter {padding-left:200px}
 #PrawyCont {padding-right:200px}
 }
+*/
 /*Break*/
+
+/*@media only screen and (min-width: 800px) and (max-width:1300px) {
+    .TextMen {display: none;}
+    .ico {margin-right: 0px;width: 50px;height: 50px;}
+    .NavButton {margin: 0px 20px 0px 20px;}
+}*/
 
 @media only screen and (max-width: 900px), screen and (max-aspect-ratio: 8/6) {
 	#NavBoxCont {display:none;}
-	Header {display: none;}
+	Header {width: 100%;}
 	[class*="col-"] {width: 100%;}
 	p img {max-width: 100%;height:auto;}
 	#NavBoxCont {display:none;}
 	.BlackBox2 {padding: 0px 10px 0px 10px;}
 	.ArticleText {}
-	.HeadArt {padding: 0px 15px 0px 10px;}
+	.HeadArt {padding: 0px 15px 0px 15px;}
 	.BlackBox {padding: 0px 10px;}
 	.ArtTextCenter{padding: 0px 15px;}
     #kkk {padding: 0px;float: none;}
-    #NewsConter {padding: 0px 15px;}
+    #NewsConter {padding: 0px 25px 0px 25px;}
     #PrawyCont {padding:0px}
     #1sss {display: flex;}
     #sss {margin: auto;padding: 0px;}
+    #logos2 {width: 100%;height: auto;}
+    #MobHide {display: grid;}
+    #logos {display: none;}
+    .BlackButton3 {width: auto;display: table-cell;}
+    #PrawyCont .BlackButton2 {background: none;color: var(--Header);}
+    #PrawyCont .BlackBox2 {margin: 0px 5%;background:none;display: block;text-align: center;}
+    #PrawyCont .BlackBoxText2 {border: 0px solid var(--Header);background: none;padding: 5px 15px 5px 15px;}
+    #PrawyCont .PrawTit {color: var(--Font);background: var(--Header);padding: 0px 20px 0px 20px;}
+    #PrawyCont #zegarstyl, #datastyl {text-align: center ;}
+    #PrawyCont {margin: 0px;}
+    #PrawyCont .ArticleText {border: 3px solid var(--Header);display:block;}
+    .CenterArtConter {margin: 0px;}
+    #NewsConter {margin: 0px;}
+    #PrawyCont  .BlackBox2 {margin: 0px;}
+    #sss {padding: 25px 0px 0px 0px;}
+    #KontaktCont #NewsConter {padding: 0px;}
+    .Date {margin: 10px 0px 10px 10px;}
 }
 
 /*Break*/
@@ -261,35 +336,73 @@ footer {font-size: 1.2rem;} /*Prawa stopka */
 @media only screen and (min-width: 900px) and (min-aspect-ratio: 8/6) {
 	#MobHide {display:none;}
     p img {max-width: 100%;height:auto;}
+    #logos2 {display: none;}
 }
 /*rekt*/
-@media screen and (-webkit-min-device-pixel-ratio: 1.0) and (-webkit-max-device-pixel-ratio: 1.5) {	
-	.switch {
-	margin: 0.25rem 0.5rem 0rem 0rem;
+@media screen and (-webkit-min-device-pixel-ratio: 0.5) and (-webkit-max-device-pixel-ratio: 1.0) {	
+    #Logo, #Logo2 {font-size: 2.6rem;}
+    .switch {
+	margin: 0.9rem 2rem 0rem 0rem;
   	width: 3.5rem;
   	height: 3.5rem;}
 }
+@media screen and (-webkit-min-device-pixel-ratio: 1.0) and (-webkit-max-device-pixel-ratio: 1.5) {	
+    #Logo, #Logo2 {font-size: 2.5rem;}
+	.switch {
+	margin: 0.9rem 2rem 0rem 0rem;
+  	width: 3.0rem;
+  	height: 3.0rem;}
+    #NewsConter {padding:  0px 20px 0px 20px;}
+    
+    #KontaktCont #NewsConter {padding: 0px}
+  /*  .NavButton {padding: 13px;font-size: 2rem;} */
+  /*  #logos {height: 325px;} */
+}
 @media screen and (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-max-device-pixel-ratio: 2.5) {
     /* CSS for best-density screens */
-	.ArticleText {font-size: 1rem;}
-	.HeadArt, .BlackBox, .BlackBox2, .BlackButton, footer {font-size: 1.5rem;}
-	#Logo {font-size: 1.75rem;}
-	#Copy {font-size: 0.75rem;}
-	.MobNavButton {font-size: 1.30rem;}
+	.ArticleText {font-size: 0.9rem;}
+	.HeadArt, .BlackBox, .BlackBox2, .BlackButton, footer, #pokazz {font-size: 1.35rem;}
+	#Logo, #Logo2 {font-size: 1.7rem;}
+    #zegarstyl{font-size: 1.65rem;}
+    #datastyl{font-size:1.15rem;}
+	#Copy {font-size: 0.70rem;}
+	.MobNavButton {font-size: 1.20rem;}
 	.switch {
-	margin: 0.25rem 0.5rem 0rem 0rem;
-  	width: 2.9rem;
-	height: 2.9rem;}
+	margin: 0.5rem 1.5rem 0rem 0rem;
+  	width: 2.4rem;
+	height: 2.4rem;}
+    #NewsConter {padding:  0px 10px 0px 10px;}
+    .ArtContener {margin-bottom: 10px;}
+    #KontaktCont #NewsConter {padding: 0px}
+    
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2.5) and (-webkit-max-device-pixel-ratio: 5) {
     /* CSS for best-density screens */
 	.ArticleText {font-size: 0.90rem;}
-	.HeadArt, .BlackBox, .BlackBox2, .BlackButton, footer {font-size: 1.35rem;}
-	#Logo {font-size: 1.5rem;}
+	.HeadArt, .BlackBox, .BlackBox2, .BlackButton, footer, #pokazz {font-size: 1.25rem;}
+	#Logo, #Logo2 {font-size: 1.50rem;}
+    #zegarstyl{font-size: 1.6rem;}
+    #datastyl{font-size:1.1rem;}
 	#Copy {font-size: 0.70rem;}
 	.MobNavButton {font-size: 1.10rem;}
 	.switch {
 	margin: 0.25rem 0.5rem 0rem 0rem;
   	width: 2.5rem;
 	height: 2.5rem;}
+    .ArtContener {margin-bottom: 10px;}
+    #NewsConter {padding:  0px 10px 0px 10px;}
+    #KontaktCont #NewsConter {padding: 0px}
 }
+
+@media only screen and (min-width: 510px) and (max-width: 900px), (min-width: 510px) and (max-aspect-ratio: 8/6)  {
+    #PrawyCont .PrawTit {background: var(--Wazne5);color: var(--Header);text-align: left;}
+    #PrawyCont #datastyl, #PrawyCont #zegarstyl, #PrawyCont BlackBoxText2 {text-align: left;}
+    #PrawyCont .ArticleText {background: var(--Wazne5);border: 0px solid black;}
+    #PrawyCont .BlackBoxText2 {border: 0px solid black;}
+    #PrawyCont .BlackBox2 {padding: 0px;margin: 0px 25px;}
+}
+
+/*
+@media only screen and (min-width: 1500px) {
+    .NavButton {padding: 15px;font-size: 2rem;}
+} */

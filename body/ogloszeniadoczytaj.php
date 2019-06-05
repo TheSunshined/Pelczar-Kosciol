@@ -29,7 +29,8 @@ $sql = "SELECT ID FROM ogloszenia ORDER BY ID DESC LIMIT 5";
 										 while($row = $result->fetch_assoc()) {
 								echo  
 									
-'<div class="col-12 ArtContener">
+'<div id="OgloszeniaCont" class="col-12 ArtContener">
+    <div class="CenterArtConter">
 	<div class="HeadArt">'
 	.$row['Title'].
 	'</div>
@@ -38,6 +39,7 @@ $sql = "SELECT ID FROM ogloszenia ORDER BY ID DESC LIMIT 5";
 		.$row['Opis'].
 		'<div class="Date">Dodano: '.$row['Data'].'</div>
 		</div>
+        </div>
 	</div>
 </div>'
 									

@@ -1,8 +1,15 @@
 <div id="NewsConter">
+        <div id="OgloszeniaCont" class="col-12 ArtContener">
+       <div class="CenterArtConter">
+        <div class="HeadArt" style="text-align:center;padding:0px">OPIS
+        </div>
+      </div>
+    </div>
 <style>
-			#opis {color:#00ffa2;border-bottom: 4px solid #00ffa2}
+			#opis {color:var(--Wazne);border-bottom: 4px solid var(--Wazne);box-shadow: 0px 5px 5px -5px;}
 		#desc {display: none;}
 		#opisActive {display: inline-block;}
+        .LinkMenu:hover:nth-child(4) {border-radius:20px 20px 0px 0px;background: var(--Wazne3);}
 </style>
 								<?php
 include('../db.php');
@@ -16,7 +23,8 @@ include('../db.php');
 										 while($row = $result->fetch_assoc()) {
 								echo  
 									
-'<div class="col-12 ArtContener">
+'<div id="OpisCont" class="col-12 ArtContener">
+  <div class="CenterArtConter">
 	<div class="HeadArt">'
 	.$row['Title'].'
 	</div>
@@ -25,6 +33,7 @@ include('../db.php');
 		.$row['Opis'].
 		'</div>
 	</div>
+  </div>
 </div>'
 									
 					;

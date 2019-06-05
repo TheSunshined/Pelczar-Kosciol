@@ -1,7 +1,7 @@
 <?php
 include('../db.php');
 
-$sql = "SELECT ID FROM aktualnosci ORDER BY ID DESC LIMIT 5"; 
+$sql = "SELECT ID FROM foto ORDER BY ID DESC LIMIT 5"; 
 									
 									$result = $conn->query($sql);
 
@@ -15,7 +15,7 @@ $sql = "SELECT ID FROM aktualnosci ORDER BY ID DESC LIMIT 5";
 								$maks[$keks] = $row['ID'];}
                                 }
                                
-									$sql = "SELECT Title, Opis, Data FROM aktualnosci 
+									$sql = "SELECT Title, Opis, Data FROM foto 
                                     WHERE NOT ID='$maks[1]' 
                                     AND ID NOT LIKE '$maks[2]' 
                                     AND ID NOT LIKE'$maks[3]' 
@@ -29,8 +29,7 @@ $sql = "SELECT ID FROM aktualnosci ORDER BY ID DESC LIMIT 5";
 										 while($row = $result->fetch_assoc()) {
 								echo  
 									
-'<div id="AktualkaCont" class="col-12 ArtContener">
-  <div class="CenterArtConter">
+'<div class="col-12 ArtContener">
 	<div class="HeadArt">'
 	.$row['Title'].
 	'</div>
@@ -39,7 +38,6 @@ $sql = "SELECT ID FROM aktualnosci ORDER BY ID DESC LIMIT 5";
 		.$row['Opis'].
 		'<div class="Date">Dodano: '.$row['Data'].'</div>
 		</div>
-        </div>
 	</div>
 </div>'
 									
