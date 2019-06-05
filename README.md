@@ -1,4 +1,4 @@
-# Pelczar-Kosciol-1.0.3
+# Pelczar-Kosciol-1.2
 Strona kościoła św. Pelczara w Strzyżowie.
 Strona jest robiona pro bono, wrzucona bez panelu admina bo sam panel wymaga jeszcze dodania kilku zabezpieczeń.
 
