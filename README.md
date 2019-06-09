@@ -4,4 +4,4 @@ Strona jest robiona pro bono, wrzucona bez panelu admina bo sam panel wymaga jes
 
 Działającą stronę można znaleźć pod tym adresem: https://www.strzyzowpelczara.pl
 
-Ewentualnie wpisująć w wyszukiwarkę google: strzyżów pelczara (1 wynik od góry ;d)
+Ewentualnie wpisując w wyszukiwarkę google: strzyżów pelczara (1 wynik od góry ;d)
