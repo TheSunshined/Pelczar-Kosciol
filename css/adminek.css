@@ -1,0 +1,32 @@
+button, input {background-color: var(--Wazne5);font-family: FontDarkSemi;border: 3px solid var(--Header);margin: 3px;
+    transition-duration: 0.4s;color:var(--Header);
+    cursor: pointer;
+}
+button:hover , input:hover {color:var(--Wazne5);background-color: var(--Header);font-family: FontDarkSemi;border: 3px solid var(--Header);margin: 3px;}
+
+input[type=reset], input[type=submit] {margin:25px 0px 25px 25px;float:right;font-size:1.5rem;border: 3px solid var(--Header)}
+input[type=reset]:hover, input[type=submit]:hover {background: var(--Header);border: 3px solid var(--Header)}
+
+/* From */
+
+.TXT-HED, label{font-size: 1.5em;color: var(--Header);font-family: FontDarkSemi;cursor:default;
+}
+
+
+form {padding: 20px;}
+
+input[type=text], select {font-size: 1.5em;
+    width: 100%;font-family: FontDarkSemi;
+    padding: 6px 12px;
+    margin: 5px 0px 25px 0px;
+    display: inline-block;
+    border: 3px solid var(--Header);
+    box-sizing: border-box;
+}
+
+.backfrom {margin: 20px 0px;
+    font-family: HeaderFont;
+    background-color: var(--Wazne5);
+    float:left;width:100%;
+	display:inline-block;
+}

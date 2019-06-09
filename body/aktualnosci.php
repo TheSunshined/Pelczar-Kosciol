@@ -14,7 +14,10 @@
 
 	</style>
 								<?php
+echo '<div style="display:none;">';
 include('../db.php');
+include('db.php');
+echo '</div>';
 
 									$sql = "SELECT Title, Opis, Data FROM aktualnosci ORDER BY ID DESC LIMIT 5"; 
 									

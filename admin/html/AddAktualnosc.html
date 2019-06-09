@@ -1,0 +1,22 @@
+<script src="../../ckeditor/ckeditor.js"></script> 
+<div id="Aktual" style="position: static;">
+	<div class="backfrom">
+		<form action="admin/ADD/AddAktualLewy.php" method="post">
+		<center>
+		<div class="TXT-HED">Dodawanie Aktualności (Lewy Panel)</div>
+		</center>
+			<label>Tytuł</label>
+		<input type="text" name="title" placeholder="...">
+		
+			<label>Opis</label>
+ 			<textarea height="500px" id="editor1" tabindex="1" class="ckeditor" type="text" name="opis" placeholder="Opis">
+            </textarea>
+            <script>
+                CKEDITOR.replace( 'editor1' );
+            </script>
+		<input class="box dodaj" type="reset" value="Reset">
+		<input class="box dodaj" type="submit" name="dodaj" value="Dodaj" />
+		</form>
+	
+	</div>
+</div>

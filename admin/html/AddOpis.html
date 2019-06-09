@@ -1,0 +1,24 @@
+<script src="../../ckeditor/ckeditor.js"></script> 
+<div id="Aktual" style="position: static;">
+	<div class="backfrom">
+		<form action="admin/ADD/AddOpis.php" method="post">
+		<center>
+		<div class="TXT-HED">Dodawanie Opis (LEWY PANEL)</div>
+		</center>
+			<label>Tytuł</label>
+		<input type="text" name="title" placeholder="...">
+		
+			<label>Opis</label>
+			
+ 			<textarea id="editor1" tabindex="1" class="ckeditor" type="text" name="opis" placeholder="opis">
+
+            </textarea>
+            <script>
+                CKEDITOR.replace( 'editor1' );
+            </script>
+		<input class="box dodaj" type="reset" value="Reset">
+		<input class="box dodaj" type="submit" name="dodaj" value="Dodaj" />
+		</form>
+	
+	</div>
+</div>

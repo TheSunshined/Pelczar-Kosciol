@@ -37,7 +37,7 @@ include('../db.php');
 </div>'
 									
 									;}
-									;}
+									}
 									$conn->close();
 									?>
 <script>

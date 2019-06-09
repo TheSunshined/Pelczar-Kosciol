@@ -41,7 +41,7 @@
 	</div>
 </div>
 <?php
-include('../db.php');
+include('db.php');
 
 
 								$sql = "SELECT Title, Opis, Warunek, Data, ID FROM prawy ORDER BY ID DESC"; 

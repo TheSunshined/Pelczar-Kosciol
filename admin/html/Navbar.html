@@ -1,0 +1,107 @@
+<nav style="margin-bottom: 20px;">
+	<script>
+	$(document).ready(function(){
+		$(".MobMenuClick").click(function(){
+			$("#MobBoxCont").toggle();
+		});
+	});
+// Preloadmenu
+        $(function () {
+            $('ul a').on('click', function (e) {
+                e.preventDefault();
+                var page = $(this).attr('href');
+                $('#content').load(page,function(){}).hide().fadeIn(1000);
+				
+            });
+        });
+		
+	</script>
+    <script>
+    function kolormen (){
+        
+        if (Logo.style.color == "var(--Wazne)")
+        
+        
+        {Logo.style.color = "var(--Font)"}
+        
+        else
+            
+        {Logo.style.color = "var(--Wazne)";}
+
+        if (Logo2.style.color == "var(--Wazne)")
+        
+        
+        {Logo2.style.color = "var(--Font)"}
+        
+        else
+            
+        {Logo2.style.color = "var(--Wazne)";}
+        
+    }
+        //Logo.innerHTML = '<div style="color:var(--Wazne);">MENU</div>';
+    </script>
+	<link rel="stylesheet" href="../css/sunshinestyle.css">
+<header>
+	
+<center>
+	<img id="logos" src="pelcz.png">
+	<img id="logos2" src="pelcz.png">
+</center>
+</header>
+<div id="MobHide">
+	<div id="MobBoxHolder">
+        <label class="switch" style="float: right;">
+		  <input class="MobMenuClick" type="checkbox">
+		  <span onclick="kolormen();" id="slider" class="slider"></span>
+		</label>
+        <div style="float: right;margin: 0px 20px;" id="Logo" class="Logoso">MENU</div>
+        <div style="float: right;margin: 0px 20px;" id="Logo2" class="Logoso">Strzyżów, Parafia św. bpa J. S. Pelczara</div>
+	</div>
+  <ul id="MobBoxCont" style="display: none;">
+		<a href="admin/body/aktualnosci.php"><div class="MobNavButton" id="aktualnosci" >AKTUALNOŚCI</div></a>
+		<a href="admin/body/ogloszenia.php"><li class="MobNavButton" id="ogloszenia">OGŁOSZENIA</li></a>
+		<a href="admin/body/zdjecia.php"><li class="MobNavButton" id="zdjecia">ZDJĘCIA</li></a>
+		<a href="admin/body/opis.php"><li class="MobNavButton" id="opis">OPIS</li></a>
+		<a href="admin/body/kontakt.php"><li class="MobNavButton" id="kontakt">KONTAKT</li></a>
+	</ul>
+</div>
+	<ul id="NavBoxCont">
+		<center>
+		<a href="admin/body/aktualnosci.php" class="LinkMenu">
+			<li class="NavButton" id="aktualnosci">	
+				<div class="ico aktual" id="aktual"></div>
+				<div class="ico aktualActive" id="aktualActive"></div>
+				<div class="TextMen">AKTUALNOŚCI</div>
+			</li>
+		</a>
+		<a href="admin/body/ogloszenia.php" class="LinkMenu">
+			<li class="NavButton" id="ogloszenia">
+				<div class="ico info" id="info"></div>
+				<div class="ico infoActive" id="infoActive"></div>
+				<div class="TextMen">OGŁOSZENIA</div>
+			</li>
+		</a>
+		<a href="admin/body/zdjecia.php" class="LinkMenu">
+			<li class="NavButton" id="zdjecia">
+				<div class="ico foto" id="foto"></div>
+				<div class="ico fotoActive" id="fotoActive"></div>
+				<div class="TextMen">ZDJĘCIA</div>
+			</li>
+		</a>
+		<a href="admin/body/opis.php" class="LinkMenu">
+			<li class="NavButton" id="opis">
+				<div class="ico opis" id="desc"></div>
+				<div class="ico opisActive" id="opisActive"></div>
+				<div class="TextMen">OPIS</div>
+			</li>
+		</a>
+		<a href="admin/body/kontakt.php" class="LinkMenu">
+			<li class="NavButton" id="kontakt">			
+				<div class="ico kontakt" id="conct"></div>
+				<div class="ico kontaktActive" id="kontaktActive"></div>
+				<div class="TextMen">KONTAKT</div>
+			</li>
+		</a>
+		</center>
+	</ul>
+</nav>

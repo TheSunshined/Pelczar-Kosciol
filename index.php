@@ -31,43 +31,14 @@
 
 <!-- KONIEC -->
 <link rel="stylesheet" href="css/sunshinestyle.css">
-    <style>html, body {height: 100%;} #fixedfoot {min-height: 100%;}</style>
-<script>
-//Ładowanie menu + footer
-	
-$(document).ready(function(){
-	$(function(){
-      $("#Navbar").load("html/Navbar.html"); 
-    });
-});
-$(document).ready(function(){
-	$(function(){
-      $("#Footer").load("html/Footer.html"); 
-    });
-});
-$(document).ready(function(){
-	$(function(){
-      $("#prawypanel").load("body/aktualnosciprawy.php"); 
-    });
-});
-$(document).ready(function(){
-	$(function(){
-      $("#content").load("body/aktualnosci.php"); 
-    });
-});
-</script>
-<script>
-    function nocny () {
-        root.style.setProperty('--Wazne2', '#9a9a9a');
-    }
-    </script>
+<style>html, body {height: 100%;} #fixedfoot {min-height: 100%;}</style>
 </head>
 <body style="margin: auto;">
-<div id="Navbar"></div> <!-- Navbar -->
+<div id="Navbar"><?php include("html/Navbar.html"); ?></div> <!-- Navbar -->
 <div id="fixedfoot">
-    <div class="col-8" id="content" style="display: block;float:left;"></div> <!-- Tresc -->
-    <div class="col-4" id="prawypanel" style="display: block;float: right"></div> <!-- Prawy Panel (kafelki)-->
+<div class="col-8" id="content" style="display: inline-block;"><?php include("body/aktualnosci.php"); ?></div> <!-- Tresc -->
+<div class="col-4" id="prawypanel" style="display: inline-block;float: right"><?php include("body/aktualnosciprawy.php"); ?></div> <!-- Prawy Panel (kafelki)-->
 </div>
-</body>
-<div id="Footer"></div> <!-- Footer -->
+
+<div id="Footer"><?php include("html/Footer.html"); ?></div> <!-- Footer -->
 </html>

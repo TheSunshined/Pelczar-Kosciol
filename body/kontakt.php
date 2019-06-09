@@ -1,5 +1,5 @@
-<div id="KontaktCont"><div id="NewsConter">
-        <div id="OgloszeniaCont" class="col-12 ArtContener">
+<div id="NewsConter">
+    <div id="OgloszeniaCont" class="col-12 ArtContener">
        <div class="CenterArtConter">
         <div class="HeadArt" style="text-align:center;padding:0px">KONTAKT
         </div>
@@ -21,32 +21,21 @@ include('../db.php');
 									if ($result->num_rows > 0) {
 
 										 while($row = $result->fetch_assoc()) {
-								echo  
-								
-									
-/*'<script>									
-$(document).ready(function(){
-    $(".blackclick'.$row['ID'].'").click(function(){
-        $(".whiteclick'.$row['ID'].'").toggle();
-    });
-});
-</script>'.*/									
-'<div class="col-12 BlackButtonContener" style="float: left;">
+								echo  						
+'<div id="AktualkaCont" class="col-12 ArtContener">
   <div class="CenterArtConter">
-	<div class="BlackBox">
-		<div class="blackclick'.$row['ID'].' BlackButton">'.$row['Title'].'</div>
-		<div id="ArticleTextKontakt" class="BlackBoxText">
-			<div class="whiteclick'.$row['ID'].' ArticleText">'.$row['Opis'].'</div>
+	<div class="HeadArt">'
+	.$row['Title'].
+	'</div>
+	<div class="ArticleBoxText">
+		<div class="ArticleText ArtTextCenter">'
+		.$row['Opis'].
+		'
 		</div>
 	</div>
-    </div>
-	</div>
-	'
-
-									
-									;}
-									;}
+  </div>
+</div>'
+;}}
 									$conn->close();
 									?>
-</div>
 </div>

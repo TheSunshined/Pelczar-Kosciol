@@ -1,0 +1,24 @@
+<script src="../../ckeditor/ckeditor.js"></script> 
+<div id="AktualPrawy" style="position: static;">
+	<div class="backfrom">
+		<form action="admin/ADD/AddAktualPrawy.php" method="post">
+		<center>
+		<div class="TXT-HED">Dodawanie (PRAWY PANEL)</div>
+		</center>
+			<label>Tytuł</label>
+		<input type="text" name="title" placeholder="...">
+		
+			<label>Opis</label>
+			
+			<textarea id="editor2" tabindex="2" class="ckeditor" type="text" name="opis" placeholder="Opis">
+ 
+            </textarea>
+            <script>
+                CKEDITOR.replace( 'editor2' );
+            </script>
+		<input class="box dodaj" type="reset" value="Reset">
+		<input class="box dodaj" type="submit" name="dodaj" value="Dodaj" />
+		</form>
+	
+	</div>
+</div>

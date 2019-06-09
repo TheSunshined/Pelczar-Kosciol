@@ -10,9 +10,6 @@
 		#foto {display: none;}
 		#fotoActive {display: inline-block;}
         .LinkMenu:hover:nth-child(3) {border-radius:20px 20px 0px 0px;background: var(--Wazne3);}
-  
-    .BlackButton3:hover {cursor: pointer;background-color: var(--Wazne2);color: var(--font);}
-    .BlackButton3 {border: 4px solid var(--Header);color: var(--Header);text-align: center;font-size: 1.65rem;font-family: FontDarkSemi;padding: 2.5px 15px;width: max-content;}
     
 </style>
 <div>
@@ -40,10 +37,10 @@ zmiana'.$string.'.style.background = "var(--Header)";
 zmiana'.$string.'.style.color = "var(--Font)";
 }
 </script>'.
-'<div class="BlackButtonContener" style="float: left;width:100%;">
+'<div id="zdjenciacont" class="BlackButtonContener" style="float: left;width:100%;">
 	<div class="BlackBox">
 		<a class="meh" style="text-decoration: none;">
-		<div onclick="kolor'.$string.'()" id="zmiana'.$string.'"  class="BlackButton3 clas'.$string.'">'.$row['Title'].'</div>
+		<div onclick="kolor'.$string.'()" id="zmiana'.$string.'"  class="BlackButton2 clas'.$string.'">'.$row['Title'].'</div>
 		</a>
 		<div class="ArticleText">
 			<div class="BlackBoxText">
