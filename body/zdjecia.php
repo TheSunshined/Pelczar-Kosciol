@@ -56,30 +56,3 @@ while($rekto = $huh->fetch_assoc()) {
         echo '</div></div></div></div></div>';;};}
     
     ?></div>
-<script>/*
-function pokaz (){
-    $(document).ready(function(){
-	$(function(){
-      $("#Aktualdoczytaj").load("body/zdjeciadoczytaj.php"); 
-    });
-});
-    pokazz.style.display = 'none';
-    znik.style.display = 'block';
-    Aktualdoczytaj.style.display = 'block';
-}
-    
-function znikaj (){
-    Aktualdoczytaj.style.display = 'none';
-    pokazz.style.display = 'block';
-    znik.style.display = 'none';
-}*/
-</script>
-<!--
-<div class="ButtonConter">
-<div class="ButtonPoka">
-<input id="pokazz" type="button" value="Pokaż więcej" class="pokawiecej" type="submit" onclick="pokaz()" >
-<input id="znik" type="button" value="Ukryj" class="pokawiecej" type="submit" onclick="znikaj()" >
-</div>
-</div>
-<div id="Aktualdoczytaj"></div>
-</div>-->

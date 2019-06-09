@@ -1,78 +1,29 @@
 <div id="NewsConter">
-<script>
-									
+<script>							
 $(document).ready(function(){
     $(".AddAktual").click(function(){
-        $("#AddAktual").toggle();
-    });
-});
-
-$(document).ready(function(){
+    $("#AddAktual").toggle();});
     $(".AddAktualPrawy").click(function(){
-        $("#AddAktualPrawy").toggle();
-    });
-});
-	
-$(document).ready(function(){
+    $("#AddAktualPrawy").toggle();});
     $(".ErseAktual").click(function(){
-        $("#ErseAktual").toggle();
-    });
-});
-	
-$(document).ready(function(){
+    $("#ErseAktual").toggle();});
     $(".ErseAktualPrawy").click(function(){
-        $("#ErseAktualPrawy").toggle();
-    });
-});
-    
-$(document).ready(function(){
+    $("#ErseAktualPrawy").toggle();});
     $(".AddAktualiz").click(function(){
-        $("#AddAktualiz").toggle();
-    });
-});
-    
-$(document).ready(function(){
+    $("#AddAktualiz").toggle();});
     $(".UpdatePrawy").click(function(){
-        $("#UpdatePrawy").toggle();
-    });
+    $("#UpdatePrawy").toggle();});
 });
-
 </script>
 <script>
 $(document).ready(function(){
 	$(function(){
-      $("#AddAktual").load("admin/html/AddAktualnosc.html"); 
-    });
-});
-	
-
-$(document).ready(function(){
-	$(function(){
-      $("#AddAktualPrawy").load("admin/html/AddPrawy.html"); 
-    });
-});
-	
-$(document).ready(function(){
-	$(function(){
-      $("#ErseAktual").load("admin/html/UsunAktualnosc.html"); 
-    });
-});
-	
-$(document).ready(function(){
-	$(function(){
-      $("#ErseAktualPrawy").load("admin/html/UsunPrawy.html"); 
-    });
-});
-
-$(document).ready(function(){
-	$(function(){
-      $("#AddAktualiz").load("admin/html/UpdateAktualnosc.html"); 
-    });
-});
-    
-$(document).ready(function(){
-	$(function(){
-      $("#UpdatePrawy").load("admin/html/UpdatePrawy.html"); 
+        $("#AddAktual").load("admin/html/AddAktualnosc.html");
+        $("#AddAktualPrawy").load("admin/html/AddPrawy.html"); 
+        $("#ErseAktual").load("admin/html/UsunAktualnosc.html"); 
+        $("#ErseAktualPrawy").load("admin/html/UsunPrawy.html"); 
+        $("#AddAktualiz").load("admin/html/UpdateAktualnosc.html");
+        $("#UpdatePrawy").load("admin/html/UpdatePrawy.html"); 
     });
 });
     

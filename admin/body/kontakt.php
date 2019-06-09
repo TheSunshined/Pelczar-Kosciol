@@ -4,84 +4,35 @@ include('../../checkuser.php');
 echo '</div>';
 ?>
 <div id="NewsConter">
-<script>
-									
+<script>								
 $(document).ready(function(){
     $(".AddAktual").click(function(){
-        $("#AddAktual").toggle();
-    });
-});
-
-$(document).ready(function(){
+    $("#AddAktual").toggle();});
     $(".AddAktualPrawy").click(function(){
-        $("#AddAktualPrawy").toggle();
-    });
-});
-	
-$(document).ready(function(){
+    $("#AddAktualPrawy").toggle();});
     $(".ErseAktual").click(function(){
-        $("#ErseAktual").toggle();
-    });
-});
-	
-$(document).ready(function(){
+    $("#ErseAktual").toggle();});
     $(".ErseAktualPrawy").click(function(){
-        $("#ErseAktualPrawy").toggle();
-    });
-});
-
-    
-$(document).ready(function(){
+    $("#ErseAktualPrawy").toggle();});
     $(".UpdatePrawy").click(function(){
-        $("#UpdatePrawy").toggle();
-    });
-});
-    
-$(document).ready(function(){
+    $("#UpdatePrawy").toggle();});
     $(".UpdateKontakt").click(function(){
-        $("#UpdateKontakt").toggle();
-    });
+    $("#UpdateKontakt").toggle();});
 });
 </script>
 <script>
 $(document).ready(function(){
 	$(function(){
-      $("#AddAktual").load("admin/html/AddKontakt.html"); 
-    });
-});
-	
-
-$(document).ready(function(){
-	$(function(){
-      $("#AddAktualPrawy").load("admin/html/AddPrawy.html"); 
-    });
-});
-	
-$(document).ready(function(){
-	$(function(){
-      $("#ErseAktual").load("admin/html/UsunKontakt.html"); 
-    });
-});
-	
-$(document).ready(function(){
-	$(function(){
-      $("#ErseAktualPrawy").load("admin/html/UsunPrawy.html"); 
-    });
-});
-    
-$(document).ready(function(){
-	$(function(){
-      $("#UpdatePrawy").load("admin/html/UpdatePrawy.html"); 
-    });
-});
-    
-$(document).ready(function(){
-	$(function(){
-      $("#UpdateKontakt").load("admin/html/UpdateKontakt.html"); 
+        $("#AddAktual").load("admin/html/AddKontakt.html"); 
+        $("#AddAktualPrawy").load("admin/html/AddPrawy.html"); 
+        $("#ErseAktual").load("admin/html/UsunKontakt.html");
+        $("#ErseAktualPrawy").load("admin/html/UsunPrawy.html"); 
+        $("#UpdatePrawy").load("admin/html/UpdatePrawy.html");
+        $("#UpdateKontakt").load("admin/html/UpdateKontakt.html"); 
     });
 });
 </script>
-
+    
 <button style="float: left;" class="AddAktual">Dodaj Kontakty</button>
 <button style="float: left;" class="UpdateKontakt">Aktualizuj Kontakty</button>
 <button style="float: left;" class="ErseAktual">Usuń Kontakty</button>

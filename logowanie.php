@@ -52,9 +52,9 @@ else
                 <center>
                 <div class="TXT-HED">Logowanie do panelu admina (https://www.strzyzowpelczara.pl).</div>
                 </center>
-                <label>Tytuł</label>
+                <label>Login</label>
                 <input type="text" name="login" placeholder="...">
-                <label>Opis</label>
+                <label>Hasło</label>
                 <input type="text" name="haslo" placeholder="...">
                 <input class="box dodaj" type="reset" value="Reset">
                 <input class="box dodaj" type="submit" name="dodaj" value="Zaloguj" />
